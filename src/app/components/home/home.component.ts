@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit,AfterViewInit {
     private newsApi : NewsService,
     private toastr: ToastrService,
     private spinner: NgxSpinnerService,
-    private radioService: RadioService){
+    ){
 
       this.toastr.success('Welcome this app!', 'BtkAkademiNews Application Works!');
 

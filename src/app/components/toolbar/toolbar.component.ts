@@ -14,7 +14,7 @@ export class ToolbarComponent implements OnInit {
   constructor(private authService:AuthService,
               private toastrService:ToastrService,
               private router:Router,
-              private radioService: RadioService) { }
+              public radioService: RadioService) { }
 
   ngOnInit(): void {
     this.play();

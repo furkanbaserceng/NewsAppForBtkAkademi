@@ -6,8 +6,8 @@
     <span>ForBtkAkademi-NewsApp</span>
 
     <span class="example-spacer"></span>
-    <button mat-button color="accent" (click)="play()">Play Radio</button>
-    <button mat-button color="accent" (click)="stop()">Stop Radio</button>
+    <button *ngIf="!radioService.isPlaying()" mat-button color="accent" (click)="play()">Play Radio</button>
+    <button *ngIf="radioService.isPlaying()" mat-button color="accent" (click)="stop()">Stop Radio</button>
     <a *ngIf="!isLogged" mat-stroked-button color="accent" (click)="logOut()">Logout</a>
    
 </mat-toolbar>
