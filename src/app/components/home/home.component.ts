@@ -4,6 +4,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { ToastrService } from 'ngx-toastr';
 import { NewsService } from 'src/app/services/news.service';
+import { RadioService } from 'src/app/services/radio.service';
 
 @Component({
   selector: 'app-home',
@@ -21,7 +22,8 @@ export class HomeComponent implements OnInit,AfterViewInit {
     private changeDetector : ChangeDetectorRef, 
     private newsApi : NewsService,
     private toastr: ToastrService,
-    private spinner: NgxSpinnerService){
+    private spinner: NgxSpinnerService,
+    private radioService: RadioService){
 
       this.toastr.success('Welcome this app!', 'BtkAkademiNews Application Works!');
 

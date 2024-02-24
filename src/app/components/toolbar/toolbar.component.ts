@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/services/auth.service';
+import { RadioService } from 'src/app/services/radio.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -12,9 +13,11 @@ export class ToolbarComponent implements OnInit {
 
   constructor(private authService:AuthService,
               private toastrService:ToastrService,
-              private router:Router) { }
+              private router:Router,
+              private radioService: RadioService) { }
 
   ngOnInit(): void {
+    this.play();
   }
 
   @Input() sideNav:any;
@@ -32,6 +35,18 @@ export class ToolbarComponent implements OnInit {
 
     
 
+  }
+
+  play(): void {
+    this.radioService.play('http://37.247.98.8/stream/166/');
+  }
+
+  pause(): void {
+    this.radioService.pause();
+  }
+
+  stop(): void {
+    this.radioService.stop();
   }
 
 }
