@@ -1,0 +1,78 @@
+// .login-container {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background-color: #f5f5f5;
+// }
+
+// .login-card {
+//     width: 300px;
+//     padding: 20px;
+//     border-radius: 8px;
+//     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+//     background-color: #fff;
+// }
+
+// .login-card-title {
+//     text-align: center;
+//     margin-bottom: 20px;
+// }
+
+// .login-input {
+//     width: 100%;
+//     margin-bottom: 16px;
+// }
+
+// .login-button {
+//     width: 100%;
+// }
+
+// .mat-form-field {
+//     width: 100%;
+// }
+
+// .mat-form-field-wrapper {
+//     padding-bottom: 0 !important;
+// }
+
+// .mat-form-field-underline {
+//     display: none;
+// }
+
+// .mat-form-field-should-float .mat-form-field-label {
+//     transform: translateY(-60%);
+//     font-size: 75%;
+// }
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #FF416C, #FF4B2B);
+  }
+  
+  .center-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px; 
+  }
+  
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .login-card {
+    background-color: transparent;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+
+ 

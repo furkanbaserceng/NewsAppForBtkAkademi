@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon (click)="this.sideNav.open()"  *ngIf="!sideNav?.opened">menu</mat-icon>
+      <mat-icon (click)="this.sideNav.close()" *ngIf="sideNav?.opened">close</mat-icon>
+  </button>
+    <span>ForBtkAkademi-NewsApp</span>
+
+    <span class="example-spacer"></span>
+   
+    <a *ngIf="!isLogged" mat-stroked-button color="accent" (click)="logOut()">Logout</a>
+   
+</mat-toolbar>
+
