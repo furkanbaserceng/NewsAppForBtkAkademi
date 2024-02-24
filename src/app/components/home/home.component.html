@@ -4,9 +4,11 @@
     <mat-sidenav #sidenav="matSidenav">
         <img class="avatar mat-elavation-z8" src="../assets/btk.webp" style="margin-top: 20px;" alt="">
         <h4 class="name">Today News</h4>
-        <mat-divider></mat-divider>
+        <h6 class="name">
+            (You can choose the news channel you want below.)</h6>
+        <mat-divider ></mat-divider>
 
-        <ng-container *ngFor="let source of sources">
+        <ng-container *ngFor="let source of sources" >
             <button (click)="searchSource(source)" mat-button class="menu-button">
             <mat-icon>event_note</mat-icon>
             <span>{{source.name}}</span>
