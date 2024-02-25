@@ -17,7 +17,7 @@ export class LoginGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       let isLogged=this.authService.isLoggedIn();
-      if(isLogged){
+      if(isLogged || sessionStorage.getItem("loggedIn")!=null){
         return true;
       }
       this.toastrService.warning("You must log in to the system to view the page.","!")

@@ -32,6 +32,7 @@ export class ToolbarComponent implements OnInit {
     this.authService.logOut();
     this.toastrService.success("Exit Successful!");
     this.router.navigate(["/login"]);
+    this.radioService.stop();
 
     
 
@@ -47,6 +48,12 @@ export class ToolbarComponent implements OnInit {
 
   stop(): void {
     this.radioService.stop();
+  }
+
+  ngDestroy(){
+
+    this.stop();
+
   }
 
 }
